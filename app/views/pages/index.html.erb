@@ -1,7 +1,7 @@
 <div ng-app="app">
   <div ng-controller="exampleCtrl">
     <h1>Hello!</h1>
-    <li ng-repeat="message in messages">{{ message }}
+    <li ng-repeat="message in messages" ng-click="alertme"(message)>{{ message }}
       <input ng-model="message"></input>
       <p> {{ message + " is whatevah! " }} </p>
 
